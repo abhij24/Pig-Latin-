@@ -1,0 +1,96 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Latin🐷</title>
+    <style>
+        textarea {
+            width: 90%;
+            min-height: 20vh;
+            display: block;
+            margin-top: 2rem;
+            margin: 1rem;
+            box-sizing: border-box;
+            font-family: 'Kalam', cursive;
+        }
+        
+        #output {
+            border: 1px solid black;
+            min-height: 10vh;
+            max-height: 20vh;
+            width: 90%;
+            margin: 1rem;
+            overflow: scroll;
+            box-sizing: border-box;
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #FFB6C1;
+            padding: 1rem ;
+            font-family: 'Kalam', cursive;
+            color: #333333;
+            position: fixed;
+            left:0;
+            right:0;
+            bottom: 0;
+        }
+
+        #div1 {
+            font-family: 'Kalam', cursive;
+            background-color: #FFB6C1;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #333333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            }
+
+        button  {
+            background-color: #FFB6C1;
+            border: none;
+            margin-left: 1rem;
+            margin: 1rem;
+            padding: 1rem 2rem;
+            font-family: 'Kalam', cursive;
+            font-size: large;
+            color: #333333;
+            
+
+        }
+
+        #div2 {
+            color:#333333;
+            font-family: 'Kalam', cursive;
+            margin-left: 1rem;
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="div1" style="font-size: 2rem; ">Pig Latin🐷</div>
+    <br> <br> <br> <br> <br> <br>
+    <textarea id="txt-input" placeholder="Put your message here which you want to convert to pig latin"></textarea>
+    <button id="btn-translate">Translate to Pig Latin</button>
+
+    <div id="div2" style="font-size: medium; "> Translation will be here 👇</div>
+    <div id="output"></div>
+    <footer>
+        <div>
+            <big>About</big>
+            <p>It converts any language to pig latin.</p>
+        </div>
+    </footer>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
